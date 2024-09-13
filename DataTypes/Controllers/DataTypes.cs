@@ -68,8 +68,11 @@ namespace DataTypes.Controllers
         /// Adds to floats together to return a float.
         /// </summary>
         /// <returns>float</returns>
+        /// <example>
+        /// GET api/DataTypes/GetFloat -> -10.198999
+        /// </example>
         /// <remarks>
-        /// Floats use 32 bytes to store the number with a given precision, which does not always exactly into a decimal representation (i.e. 1/3 is not 0.3333)
+        /// Floats use 32 bytes to store the number with a given precision, which does not always exactly fit into a decimal representation (i.e. 1/3 is not 0.3333)
         /// https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types
         /// </remarks>
         [HttpGet(template: "GetFloat")]
